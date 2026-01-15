@@ -13,25 +13,38 @@
 <div id="pano"></div>
 
 <div id="sceneList">
-  <ul class="scenes">
-    
-      <a href="javascript:void(0)" class="scene" data-id="0-r0010387">
-        <li class="text">R0010387</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="1-r0010388">
-        <li class="text">R0010388</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="2-r0010389">
-        <li class="text">R0010389</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="3-r0010390">
-        <li class="text">R0010390</li>
-      </a>
-    
-  </ul>
+ <div class="sceneList-inner">
+	<!-- Левая часть — список -->
+	  <ul class="scenes">
+		
+		  <a href="javascript:void(0)" class="scene" data-id="0-r0010387">
+			<li class="text">R0010387</li>
+		  </a>
+		
+		  <a href="javascript:void(0)" class="scene" data-id="1-r0010388">
+			<li class="text">R0010388</li>
+		  </a>
+		
+		  <a href="javascript:void(0)" class="scene" data-id="2-r0010389">
+			<li class="text">R0010389</li>
+		  </a>
+		
+		  <a href="javascript:void(0)" class="scene" data-id="3-r0010390">
+			<li class="text">R0010390</li>
+		  </a>
+	  </ul>
+	  
+	  <!-- Правая часть — карта -->
+    <div class="floorplan">
+      <img src="img/floorplan.jpg" class="floorplan-image">
+
+      <!-- Точки -->
+      <div class="floor-point" data-scene="0-r0010387" style="top:30%; left:40%;">1</div>
+      <div class="floor-point" data-scene="1-r0010388" style="top:55%; left:60%;">2</div>
+      <div class="floor-point" data-scene="2-r0010389" style="top:70%; left:35%;">3</div>
+    </div>
+
+ </div>	
 </div>
 
 <div id="titleBar">

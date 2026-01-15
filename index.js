@@ -449,6 +449,22 @@
     }
     return null;
   }
+  
+  //* ===== FLOORMAP ======= *
+  var floorPoints = document.querySelectorAll('.floor-point');
+
+floorPoints.forEach(function(point) {
+  point.addEventListener('click', function() {
+    var sceneId = point.getAttribute('data-scene');
+    var scene = findSceneById(sceneId);
+
+    if (scene) {
+      switchScene(scene);
+      hideSceneList(); // закрываем панель после перехода
+    }
+  });
+});
+
 
   // Display the initial scene.
   switchScene(scenes[0]);
