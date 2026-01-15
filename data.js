@@ -54,7 +54,10 @@ var APP_DATA = {
           "pitch": 0.45926599601706997,
           "title": "Об этом объекте",
           "text": "Это штатив",
-		  "image": "content/myimage.png",
+		  "images": [
+			"content/photo1.jpg",
+			"content/photo2.jpg"
+		  ],
 		  "video": "content/videos/Beauty.mp4"
         },
         {
