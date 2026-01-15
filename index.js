@@ -332,6 +332,16 @@
     // Place header and text into wrapper element.
     wrapper.appendChild(header);
     wrapper.appendChild(text);
+	
+	// Новый блок: картинка, если поле hotspot.image существует
+	if (hotspot.image) {
+    var img = document.createElement('img');
+    img.src = hotspot.image; // например 'images/myimage.png'
+    img.style.width = "320px";
+    img.style.height = "auto";
+    img.style.marginTop = "10px"; // отделение от текста
+    wrapper.appendChild(img);
+	}
 
     // Create a modal for the hotspot content to appear on mobile mode.
     var modal = document.createElement('div');
