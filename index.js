@@ -340,7 +340,7 @@
     img.style.width = "320px";
     img.style.height = "auto";
     img.style.marginTop = "10px"; // отделение от текста
-    wrapper.appendChild(img);
+    text.appendChild(img);
 	}
 
     // Create a modal for the hotspot content to appear on mobile mode.
