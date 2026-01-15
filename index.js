@@ -335,13 +335,23 @@
 	
 	// Новый блок: картинка, если поле hotspot.image существует
 	if (hotspot.image) {
-    var img = document.createElement('img');
-    img.src = hotspot.image; // например 'images/myimage.png'
-    img.style.width = "320px";
-    img.style.height = "auto";
-    img.style.marginTop = "10px"; // отделение от текста
-    text.appendChild(img);
+		var img = document.createElement('img');
+		img.src = hotspot.image; // например 'images/myimage.png'
+		img.style.width = "320px";
+		img.style.height = "auto";
+		img.style.marginTop = "10px"; // отделение от текста
+		text.appendChild(img);
 	}
+	
+	if (hotspot.video) {
+		var video = document.createElement('video');
+		video.src = hotspot.video; // например 'videos/myvideo.mp4'
+		video.width = 320;
+		video.height = 240;
+		video.controls = true;
+		video.style.marginTop = '10px';
+		text.appendChild(video);
+    }
 
     // Create a modal for the hotspot content to appear on mobile mode.
     var modal = document.createElement('div');
